@@ -1,0 +1,1 @@
+V tomto repozitáři se nachází kódy pro diplomovou práci zabývající se odhadem orientace RFID tagu pomocí metod strojového učení. Repozitář obsahuje dvě složky: Python  pro automatizaci Ansys HFSS a Matlab pro zpracovávání výsledků z HFSS.

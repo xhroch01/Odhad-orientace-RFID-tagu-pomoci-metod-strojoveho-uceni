@@ -179,3 +179,23 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# --- MATLAB IGNORE RULES ---
+
+# Windows/Matlab autosave files
+*.asv
+*.autosave
+
+# MATLAB generated files
+*.mat
+*.fig
+*.mex*
+slprj/
+*.slx.r20*
+*.tf
+
+# Simulink cache
+*.slxc
+
+# Octave files (pokud bys nekdy pouzil)
+octave-workspace

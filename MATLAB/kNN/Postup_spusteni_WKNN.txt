@@ -1,0 +1,7 @@
+1) Create_calibration_grid.m - tvorba kalibračního gridu - nutno nastavit cestu k referenčnímu datasetu Grid_200x200 λ/3 - výstupem referenční soubor RFID_rectangle_Database_WKNN_lambda3.mat
+
+2A) funkce WKNN_rotation_estimate.m - hlavní skript pro WKNN_loop.m a WKNN_Single_run.m - potřebuje calculate_distance_to_lines_weight.m ve stejné složce.
+
+2) WKNN_loop.m - projde ve smyčce všechny testované soubory, vykreslí nespočítané soubory - nutno nastavit cestu ke zpracovávaným souborům (LHS dataset λ/3) + potřebuje soubor obsahující funkci WKNN_rotation_estimate.m ve stejné složce jako WKNN_loop.m, potřebuje načíst RF_Model.mat
+
+3) WKNN_Single_run.m - zpracuje konkrétní testovaný datový soubor a zobrazí vizualizaci - potřebuje soubor obsahující funkci WKNN_rotation_estimate.m ve stejné složce jako WKNN_Single_run.m, potřebuje načíst RF_Model.mat

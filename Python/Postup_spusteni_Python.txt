@@ -1,0 +1,25 @@
+1) hfss_config.py 
+	- inicializační soubor, který se připojí k otevřenému projektu v HFSS 
+	- potřeba nastavit název projektu, designu a setupu; nastavit adresář, kde se budou ukládat výsledky simulací (sedí s přiloženým Tag_Airbox.aedt souborem)
+	- po nastavení uložit
+
+2) grid_sweep.py 
+	- vytvoří mřížku hodnot s definovaným krokem polohy a rotace
+	- nastavit minimální a maximální sweepu + jeho krok; 
+	- nastavit počet jader procesoru použitých pro simulaci, (FIELD_EXPR, FREQ, PHASE jsou v souladu s přiloženým Tag_Airbox.aedt souborem), případně nastavit název podadresáře;
+	- názvy proměnných sedí s Tag_Airbox.aedt souborem
+	- nastavit cestu k .pts souborům, které definují polohy jednotlivých sond, které snímají pole v airboxu
+	- nastavit cestu v terminálu, aktivovat .venv (pokud je ve stejné složce jako .py soubory - .\.venv\Scripts\activate)
+	- po nastavení uložit
+	- spustit: python grid_sweep.py
+
+3) LHS_sweep.py
+	- vytvoří dataset pomocí LHS
+	- nastavit počet simulovaných hodnot v dané oblasti (např kvadrantu)
+	- nastavit oblast, kde se budou hodnoty simulovat
+	- nastavit rozsah natočení štítku
+	- nastavit počet jader procesoru použitých pro simulaci, (FIELD_EXPR, FREQ, PHASE jsou v souladu s přiloženým Tag_Airbox.aedt souborem), případně nastavit název podadresáře;
+	- nastavit cestu k .pts souborům, které definují polohy jednotlivých sond, které snímají pole v airboxu
+	- nastavit cestu v terminálu, aktivovat .venv pokud není (pokud je ve stejné složce jako .py soubory - .\.venv\Scripts\activate)
+	- po nastavení uložit
+	- spustit: python LHS_sweep.py

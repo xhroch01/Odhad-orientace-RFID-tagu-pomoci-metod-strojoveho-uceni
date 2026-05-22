@@ -1,0 +1,12 @@
+1) Create_calibration_grid.m
+	- vytvoří referenční mřížku hodnot
+	- vložit cestu ke složce s kalibračními soubory
+
+2) Rotate_estimation_loop.m
+	- ve smyčce zpracuje testované soubory ve stejných bodech kalibrační mřížky pro nastavený rozestup sond
+	- Potřebuje předzpracovanou databázi RFID_Database.mat z Create_calibration_grid.m 
+	- exportuje CSV s výsledky pro jednotlivé interpolace
+
+3) Rotate_estimation_single_run.m
+	- zpracuje konkrétní soubor ve stejném bodě kalibrační mřížky pro nastavený rozestup sond
+	- Potřebuje předzpracovanou databázi RFID_Database.mat z Create_calibration_grid.m 
